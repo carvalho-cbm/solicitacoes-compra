@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #1a1a1a;
+}
+
+header {
+  background-color: #003087;
+  padding: 20px 40px;
+}
+
+.conteudo-cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nome-logo {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.subtitulo-cabecalho {
+  color: #f5a623;
+  font-size: 14px;
+}
+
+main {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.secao-formulario {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.secao-formulario h1 {
+  font-size: 20px;
+  color: #003087;
+  margin-bottom: 24px;
+}
+
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.grupo-campo label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.grupo-campo input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+.grupo-campo input:focus {
+  outline: none;
+  border-color: #003087;
+}
+
+.mensagem-erro {
+  color: #cc0000;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+#botao-enviar {
+  width: 100%;
+  padding: 12px;
+  background-color: #f5a623;
+  color: #003087;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#botao-enviar:hover {
+  background-color: #e09415;
+}
+
+.secao-lista {
+  margin-top: 40px;
+}
+
+.secao-lista h2 {
+  font-size: 18px;
+  color: #003087;
+  margin-bottom: 16px;
+}
+
+.cartao-solicitacao {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  border-left: 5px solid #003087;
+}
+
+.cartao-solicitacao .linha-cartao {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.cartao-solicitacao .linha-cartao span:first-child {
+  color: #666;
+}
+
+.cartao-solicitacao .linha-cartao span:last-child {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.etiqueta-status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.status-aprovado {
+  background-color: #e6f4ea;
+  color: #2e7d32;
+}
+
+.status-pendente {
+  background-color: #fff3e0;
+  color: #e65100;
+}
