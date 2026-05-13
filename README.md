@@ -37,6 +37,7 @@ Não é necessário instalar nada ou rodar servidor.
 | Acima de R$ 1.000,00 | Aguardando aprovação |
 
 ## Estrutura
+```bash
 solicitacoes-compra/
 ├── index.html   → estrutura da página
 ├── style.css    → estilização
