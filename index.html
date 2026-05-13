@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solicitações de Compra – VINCI Energies</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="conteudo-cabecalho">
+        <span class="nome-logo">VINCI Energies</span>
+        <span class="subtitulo-cabecalho">Portal de Compras Interno</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="secao-formulario">
+        <h1>Nova Solicitação de Compra</h1>
+
+        <form id="formulario-compra" novalidate>
+          <div class="grupo-campo">
+            <label for="solicitante">Nome do solicitante</label>
+            <input type="text" id="solicitante" placeholder="Seu nome completo" />
+            <span class="mensagem-erro" id="erro-solicitante"></span>
+          </div>
+
+          <div class="grupo-campo">
+            <label for="produto">Produto</label>
+            <input type="text" id="produto" placeholder="Nome do produto ou serviço" />
+            <span class="mensagem-erro" id="erro-produto"></span>
+          </div>
+
+          <div class="grupo-campo">
+            <label for="valor">Valor da compra (R$)</label>
+            <input type="number" id="valor" placeholder="0,00" min="0" step="0.01" />
+            <span class="mensagem-erro" id="erro-valor"></span>
+          </div>
+
+          <button type="submit" id="botao-enviar">Enviar Solicitação</button>
+        </form>
+      </section>
+
+      <section class="secao-lista" id="secao-lista">
+        <h2>Solicitações Enviadas</h2>
+        <div id="lista-solicitacoes"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
